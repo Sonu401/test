@@ -1,0 +1,15 @@
+#include<stdio.h>
+extern int x;
+void f1(){
+    ++x;
+}
+void f2(){
+    ++x;
+}
+void main(){
+    ++x;
+    f1();
+    f2();
+    printf("%d",x);
+}
+int x=10;
